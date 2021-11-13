@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mapFragment"
+        android:title="@string/map"
+        android:enabled="true"
+        android:icon="@drawable/map"/>
+    <item
+        android:id="@+id/listViewFragment"
+        android:title="@string/list"
+        android:enabled="true"
+        android:icon="@drawable/list"/>
+
+</menu>

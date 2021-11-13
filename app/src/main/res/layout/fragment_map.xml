@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flFmRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.views.MapFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llFmLocationContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvFmSourceLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center|start"
+                    android:hint="@string/source_location" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/etFmDestinationLocation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center|start"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:hint="@string/destination_location" />
+                    <ImageButton
+                        android:id="@+id/ivFmSearchDestination"
+                        android:layout_width="0dp"
+                        android:src="@drawable/ic_baseline_search_24"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        style="?android:borderlessButtonStyle"
+                        android:layout_weight="0.2"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnFmShowDirection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/show_direction" />
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/fragFmMapContainer"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/llFmLocationContainer" />
+            <LinearLayout
+                android:id="@+id/llFmLoaderContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/pbFmLoader"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+</FrameLayout>

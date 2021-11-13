@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map">Map</string>
+    <string name="list">List</string>
+    <string name="selected_data">Selected Data List</string>
+    <string name="data_list">Data List</string>
+    <string name="no_data_found">No data found !!!</string>
+    <string name="no_select_data_found">Select data from list below..</string>
+    <string name="source_location">Your current location</string>
+    <string name="destination_location">Enter destination location</string>
+    <string name="show_direction">Show Direction</string>
+    <string name="google_map_api_key">AIzaSyDF4nd4hXuYvo5T65mP-Q7D5dzMQgOBu5g</string>
+    <string name="request_denied">REQUEST_DENIED</string>
+</resources>

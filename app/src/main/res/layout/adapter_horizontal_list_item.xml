@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvAhliRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:id="@+id/llAhliContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvAhliSelectedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:drawableStart="@drawable/iclose"
+            android:drawableLeft="@drawable/iclose"
+            android:drawablePadding="5dp"
+            android:gravity="center|start"
+            android:padding="8dp"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
